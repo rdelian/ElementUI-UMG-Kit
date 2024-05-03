@@ -2,12 +2,7 @@
 
 
 #include "ELMTCombo.h"
-
-void UELMTCombo::Test_Implementation() {
-	//Super::RebuildWidget();
-	MyComboBox->InvalidateStyle();
-	UE_LOG(LogTemp, Warning, TEXT("Test_Implementation"));
-}
+#include "CommonTextBlock.h"
 
 void UELMTCombo::SynchronizeProperties() {
 	Super::SynchronizeProperties();

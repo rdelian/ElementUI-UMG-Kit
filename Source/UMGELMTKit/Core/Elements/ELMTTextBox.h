@@ -5,7 +5,6 @@
 #include "CoreMinimal.h"
 #include "Components/EditableTextBox.h"
 #include "CommonButtonBase.h"
-#include "CommonTextBlock.h"
 #include "ELMTTextBox.generated.h"
 
 UCLASS(Abstract, Blueprintable, ClassGroup = UI)
@@ -31,6 +30,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Style, meta = (ExposeOnSpawn = true))
 	TSubclassOf<UELMTTextBoxStyle> TextBoxStyle;
 
-	virtual void SynchronizeProperties();
+	virtual void SynchronizeProperties() override;
 
 };

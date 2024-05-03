@@ -16,13 +16,12 @@ public:
 };
 
 UCLASS()
-class UMGELMTKIT_API UELMTProgressBar : public UProgressBar
-{
+class UMGELMTKIT_API UELMTProgressBar : public UProgressBar {
 	GENERATED_BODY()
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Style, meta = (ExposeOnSpawn = true))
 	TSubclassOf<UELMTProgressBarStyle> ProgressBarStyle;
 
-	virtual void SynchronizeProperties();
+	virtual void SynchronizeProperties() override;
 };

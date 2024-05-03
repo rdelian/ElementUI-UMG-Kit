@@ -7,7 +7,6 @@
 void UELMTSlider::SynchronizeProperties() {
 	Super::SynchronizeProperties();
 
-	if (SliderStyle) {
+	if (SliderStyle)
 		SetWidgetStyle(SliderStyle.GetDefaultObject()->Style);
-	}
 }

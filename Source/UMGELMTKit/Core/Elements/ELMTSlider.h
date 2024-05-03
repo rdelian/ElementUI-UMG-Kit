@@ -22,7 +22,6 @@ class UMGELMTKIT_API UELMTSlider : public USlider {
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Style, meta = (ExposeOnSpawn = true))
 	TSubclassOf<UELMTSliderStyle> SliderStyle;
-	
-	virtual void SynchronizeProperties();
 
+	virtual void SynchronizeProperties() override;
 };

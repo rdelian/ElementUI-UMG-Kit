@@ -7,7 +7,7 @@ void UELMTProgressBar::SynchronizeProperties() {
 	Super::SynchronizeProperties();
 
 	if (ProgressBarStyle) {
-		TObjectPtr<UELMTProgressBarStyle> StyleInstance = ProgressBarStyle.GetDefaultObject();
+		const TObjectPtr<UELMTProgressBarStyle> StyleInstance = ProgressBarStyle.GetDefaultObject();
 
 		SetWidgetStyle(StyleInstance->Style);
 

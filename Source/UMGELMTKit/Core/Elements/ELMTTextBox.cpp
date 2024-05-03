@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "ELMTTextBox.h"
+#include "CommonTextBlock.h"
 
 void UELMTTextBox::SynchronizeProperties() {
 	Super::SynchronizeProperties();
@@ -8,10 +9,10 @@ void UELMTTextBox::SynchronizeProperties() {
 	if (!TextBoxStyle)
 		return;
 
-	TObjectPtr<UELMTTextBoxStyle> StyleInstance = TextBoxStyle.GetDefaultObject();
+	const TObjectPtr<UELMTTextBoxStyle> StyleInstance = TextBoxStyle.GetDefaultObject();
 
 	if (StyleInstance->CommonButtonStyle) {
-		TObjectPtr<UCommonButtonStyle> ButtonInstance = StyleInstance->CommonButtonStyle.GetDefaultObject();
+		const TObjectPtr<UCommonButtonStyle> ButtonInstance = StyleInstance->CommonButtonStyle.GetDefaultObject();
 
 		StyleInstance->Style.BackgroundImageNormal = ButtonInstance->NormalBase;
 		StyleInstance->Style.BackgroundImageHovered = ButtonInstance->NormalBase;
@@ -19,9 +20,7 @@ void UELMTTextBox::SynchronizeProperties() {
 		StyleInstance->Style.BackgroundImageReadOnly = ButtonInstance->Disabled;
 
 		// Font style
-		TObjectPtr<UCommonTextStyle> ButtonTextStyle = ButtonInstance->GetNormalTextStyle();
-
-		if (ButtonTextStyle) {
+		if (const TObjectPtr<UCommonTextStyle> ButtonTextStyle = ButtonInstance->GetNormalTextStyle()) {
 			StyleInstance->Style.TextStyle.Font = ButtonTextStyle->Font;
 			StyleInstance->Style.TextStyle.ShadowOffset = ButtonTextStyle->ShadowOffset;
 			StyleInstance->Style.TextStyle.ShadowColorAndOpacity = ButtonTextStyle->ShadowColor;

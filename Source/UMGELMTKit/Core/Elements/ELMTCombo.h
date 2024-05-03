@@ -5,7 +5,6 @@
 #include "CoreMinimal.h"
 #include "Components/ComboBoxString.h"
 #include "CommonButtonBase.h"
-#include "CommonTextBlock.h"
 #include "ELMTCombo.generated.h"
 
 
@@ -31,18 +30,12 @@ public:
 };
 
 UCLASS()
-class UMGELMTKIT_API UELMTCombo : public UComboBoxString
-{
+class UMGELMTKIT_API UELMTCombo : public UComboBoxString {
 	GENERATED_BODY()
 
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = ELMT_Style, meta = (ExposeOnSpawn = true))
 	TSubclassOf<UELMTComboStyle> ComboBoxStyle;
 
-	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, CallInEditor)
-	void Test();
-
-	void Test_Implementation();
-
-	virtual void SynchronizeProperties();
+	virtual void SynchronizeProperties() override;
 };
