@@ -8,9 +8,9 @@ _\*Ready to use, drag & drop_
 
 ## Info
 
-These are not Elements wrapped in a Widget Blueprint exposing _some_ functionality one by one. These are elements that extends the default ones allowing a `TextBox` for example to inherit the style from _CommonUI Button Style_ while keeping full access to all the default properties.
+These are not Elements wrapped in a Widget Blueprint exposing _some_ functionality one by one. These are elements that extend the default ones allowing a `TextBox` for example to inherit the style from _CommonUI Button Style_ while keeping full access to all the default properties.
 
-This allows for easy changes to the style, some of the elements are based on others, for example chaning `ElementUI_Style_Btn_Primary` will change the style for all of them, while these keep their respective colors.
+This allows for easy changes to the style, some of the elements are based on others for example, changing `ElementUI_Style_Btn_Primary` will change the style for all of them, while these keep their respective colors.
 
 ## How to use it?
 
@@ -33,7 +33,7 @@ Search for `ElementUI_` in your Blueprint Widget
 ## How to change the styles?
 
 In your blueprint widget, click an element and it will have a _"Style"_ property that can be changed and allow only styles specific to that element.
-Or to create a new one beside the Common UI Style, search for `ELMT`
+Or to create a new one besides the Common UI Style, search for `ELMT`
 
 See `UMGELMTKit/Content/Interface/Style/`
 
@@ -110,9 +110,9 @@ Components are widget blueprints made with elements.
 
 ## Extra
 
-- Custom DPI Scale that matches some desktop app behaviour (see UMGELMTKit/Content/Interface/ElementUI_DPI_Curve)
+- Custom DPI Scale that matches some desktop app behavior (see UMGELMTKit/Content/Interface/ElementUI_DPI_Curve)
 
-- 3 Demo Widgets including this Email Dashboard inspired from [shadcn](https://ui.shadcn.com/examples/mail):
+- 3 Demo Widgets including this Email Dashboard inspired by [shadcn](https://ui.shadcn.com/examples/mail):
 
 <!-- <details> -->
   <!-- <summary>Preview</summary> -->
