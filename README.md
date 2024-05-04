@@ -12,9 +12,9 @@ These are not Elements wrapped in a Widget Blueprint exposing _some_ functionali
 
 This allows for easy changes to the style, some of the elements are based on others, for example chaning `ElementUI_Style_Btn_Primary` will change the style for all of them, while these keep their respective colors.
 
-## How to use the elements?
+## How to use it?
 
-Search for `ElementUI_`
+Search for `ElementUI_` in your Blueprint Widget
 
 <details>
   <summary>Preview elements</summary>
@@ -30,14 +30,16 @@ Search for `ElementUI_`
 
 </details>
 
-## How to change the style?
+## How to change the styles?
 
-See `Interface/Styles`
+In your blueprint widget, click an element and it will have a _"Style"_ property that can be changed and allow only styles specific to that element.
+Or to create a new one beside the Common UI Style, search for `ELMT`
 
-## Inheritance order
+See `UMGELMTKit/Content/Interface/Style/`
+
+## Styles Inheritance order
 
 **Buttons**
-
 
 ```
 UMGELMTKit/Content/Interface/Style/Buttons/ElementUI_Style_Btn_Primary
@@ -51,7 +53,6 @@ UMGELMTKit/Content/Interface/Style/Buttons/ElementUI_Style_Btn_Primary
 
 **Normal Text**
 
-
 ```
 UMGELMTKit/Content/Interface/Style/Text/ElementUI_Style_Text_Normal
 ├─ ElementUI_Style_Text_Normal_Gray
@@ -59,7 +60,6 @@ UMGELMTKit/Content/Interface/Style/Text/ElementUI_Style_Text_Normal
 ```
 
 **Small Text**
-
 
 ```
 UMGELMTKit/Content/Interface/Style/Text/ElementUI_Style_Text_Small
