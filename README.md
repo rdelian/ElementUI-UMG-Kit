@@ -2,7 +2,7 @@
 
 **An easy way to change the style of your elements that extends beyond the default ones the Common UI provides.**
 
-![alt text](https://i.imgur.com/tvVaHcT.png)
+![alt text](https://i.imgur.com/ct14OHy.png)
 
 _\*Ready to use, drag & drop_
 
